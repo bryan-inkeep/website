@@ -7,7 +7,7 @@ summary: >-
   Server, enabling users to execute commands and make schema changes through
   natural language without coding.
 enableTableOfContents: true
-updatedOn: '2026-04-24T10:03:58.000Z'
+updatedOn: "2026-04-24T10:03:58.000Z"
 ---
 
 The **Neon MCP Server** is an open-source tool that lets you interact with your Neon Postgres databases in **natural language**:
@@ -160,7 +160,7 @@ Use an organization API key to limit access to organization projects only.
 
 Run the MCP server locally on your machine.
 
-**Requires:** Node.js >= v18, [Neon API key](/docs/manage/api-keys)
+**Requires:** Node.js >= v20, [Neon API key](/docs/manage/api-keys)
 
 ```bash
 npx add-mcp "npx -y @neondatabase/mcp-server-neon start <YOUR_NEON_API_KEY>" --name neon
