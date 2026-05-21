@@ -9,7 +9,7 @@ summary: >-
 redirectFrom:
   - /guides/neon-mcp-server-github-copilot-vs-code
 enableTableOfContents: true
-updatedOn: '2026-04-24T10:03:58.000Z'
+updatedOn: "2026-04-24T10:03:58.000Z"
 ---
 
 This guide covers connecting MCP clients to the Neon MCP Server for natural language interaction with your Neon Postgres databases.
@@ -67,7 +67,7 @@ This adds the MCP config to your editor's configuration files. Add `-g` for glob
 
 - **Quick setup:** `npx neonctl@latest init` (MCP with API key auth, extension where supported, agent skills, and many assistants via the wizard)
 - **OAuth:** Connect to Neon's remote MCP server (no local installation needed)
-- **Local:** Run the MCP server locally with your API key (requires Node.js >= v18)
+- **Local:** Run the MCP server locally with your API key (requires Node.js >= v20)
 
 For Local setup, you'll need a [Neon API key](/docs/manage/api-keys#creating-api-keys).
 
