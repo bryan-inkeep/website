@@ -69,6 +69,8 @@
               slug: import/migrate-from-render
             - title: Supabase
               slug: import/migrate-from-supabase
+            - title: Neon vs Supabase branching
+              slug: guides/neon-vs-supabase-branching
             - title: Turso
               slug: import/migrate-from-turso
             - title: Neon to Neon
