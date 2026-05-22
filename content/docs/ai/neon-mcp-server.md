@@ -7,7 +7,7 @@ summary: >-
   Server, enabling users to execute commands and make schema changes through
   natural language without coding.
 enableTableOfContents: true
-updatedOn: '2026-04-24T10:03:58.000Z'
+updatedOn: "2026-04-24T10:03:58.000Z"
 ---
 
 The **Neon MCP Server** is an open-source tool that lets you interact with your Neon Postgres databases in **natural language**:
@@ -216,6 +216,10 @@ Use `cmd` or `wsl` if you encounter issues:
 </Tabs>
 
 <MCPTools />
+
+### Using Neon Auth with MCP
+
+The Neon MCP Server includes tools for provisioning and configuring Neon Auth (`provision_neon_auth`, `get_neon_auth_config`, `configure_neon_auth`). For detailed guidance on setting up authentication workflows with these tools, the `neon-auth` agent skill provides step-by-step instructions. Install it with `npx skills add neondatabase/agent-skills -s neon-auth` or via `npx neonctl@latest init`. See [Agent Skills](/docs/ai/agent-skills) for more details.
 
 ## Troubleshooting
 
