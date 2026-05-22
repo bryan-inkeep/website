@@ -2,7 +2,7 @@
 title: Agent Skills
 subtitle: Teach your AI coding assistant how to work with Neon
 enableTableOfContents: true
-updatedOn: '2026-04-16T20:40:00.000Z'
+updatedOn: "2026-04-16T20:40:00.000Z"
 redirectFrom:
   - /docs/ai/ai-rules
   - /docs/ai/ai-rules-neon-toolkit
@@ -93,7 +93,7 @@ The Neon skill provides guidance across the full development workflow:
 
 - **Getting started** with Neon, including project setup and key features (branching, autoscaling, scale-to-zero, instant restore, read replicas)
 - **Connections**, including the serverless driver, connection pooling, and connection strings
-- **Authentication** with Neon Auth
+- **Authentication** with Neon Auth (a dedicated `neon-auth` skill is available for detailed auth provisioning and configuration guidance)
 - **Data API** via `@neondatabase/neon-js`
 - **Platform APIs and SDKs**, including the REST API, TypeScript SDK, and Python SDK
 - **Developer tools**, including the CLI, VS Code extension, and MCP server
