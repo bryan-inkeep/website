@@ -6,7 +6,7 @@ summary: >-
   integrates with your Neon database, allowing for branch-aware authentication
   and seamless testing of authentication workflows in isolated environments.
 enableTableOfContents: true
-updatedOn: '2026-05-17T10:06:14.681Z'
+updatedOn: "2026-05-17T10:06:14.681Z"
 redirectFrom:
   - /docs/neon-auth/quick-start/nextjs
   - /docs/auth/migrate/from-stack-auth
@@ -43,6 +43,8 @@ Choose your framework to get started:
 ## Set up with your AI editor
 
 <AuthAISetup />
+
+For AI-assisted Neon Auth provisioning using the Neon MCP server, install the dedicated [neon-auth skill](/docs/ai/agent-skills) with `npx skills add neondatabase/agent-skills -s neon-auth`. This skill guides your AI editor through provisioning Neon Auth, configuring trusted origins and OAuth providers, setting up the email provider, and wiring authentication into your Next.js or React app.
 
 ## Why Neon Auth?
 
@@ -88,7 +90,7 @@ Enable Auth in the Neon Console or [with your AI editor](#set-up-with-your-ai-ed
 See the [Next.js Server SDK reference](/docs/auth/reference/nextjs-server) for complete API documentation.
 
 ```typescript filename="lib/auth/server.ts"
-import { createNeonAuth } from '@neondatabase/auth/next/server';
+import { createNeonAuth } from "@neondatabase/auth/next/server";
 
 export const auth = createNeonAuth({
   baseUrl: process.env.NEON_AUTH_BASE_URL!,
@@ -97,7 +99,7 @@ export const auth = createNeonAuth({
 ```
 
 ```typescript filename="app/api/auth/[...path]/route.ts"
-import { auth } from '@/lib/auth/server';
+import { auth } from "@/lib/auth/server";
 
 export const { GET, POST } = auth.handler();
 ```
@@ -107,14 +109,14 @@ export const { GET, POST } = auth.handler();
 See the [Client SDK reference](/docs/reference/javascript-sdk) for complete API documentation.
 
 ```typescript filename="src/auth.ts"
-import { createAuthClient } from '@neondatabase/neon-js/auth';
+import { createAuthClient } from "@neondatabase/neon-js/auth";
 
 export const authClient = createAuthClient(import.meta.env.VITE_NEON_AUTH_URL);
 ```
 
 ```tsx filename="src/App.tsx"
-import { NeonAuthUIProvider, AuthView } from '@neondatabase/auth-ui';
-import { authClient } from './auth';
+import { NeonAuthUIProvider, AuthView } from "@neondatabase/auth-ui";
+import { authClient } from "./auth";
 
 export default function App() {
   return (
