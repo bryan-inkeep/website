@@ -9,7 +9,7 @@ summary: >-
 redirectFrom:
   - /guides/neon-mcp-server-github-copilot-vs-code
 enableTableOfContents: true
-updatedOn: '2026-04-24T10:03:58.000Z'
+updatedOn: "2026-04-24T10:03:58.000Z"
 ---
 
 This guide covers connecting MCP clients to the Neon MCP Server for natural language interaction with your Neon Postgres databases.
@@ -26,7 +26,7 @@ The fastest way to get started:
 npx neonctl@latest init
 ```
 
-**`neonctl init`** (see [`neonctl init` reference](/docs/reference/cli-init)) creates a Neon API key and configures the MCP server with **API key** auth so you can skip OAuth when using the connection. It installs the VS Code/Cursor extension where applicable, wires **Claude Code** and **many other assistants** the wizard supports, and installs Neon's [agent skills](https://github.com/neondatabase/agent-skills). Then restart and ask your AI assistant **"Get started with Neon"**.
+**`neonctl init`** (see [`neonctl init` reference](/docs/reference/cli-init)) creates a Neon API key and configures the MCP server with **API key** auth so you can skip OAuth when using the connection. It installs the VS Code/Cursor extension where applicable, wires **Claude Code** and **many other assistants** the wizard supports, and installs the [neon-postgres skill](/docs/ai/agent-skills). For specialized workflows like Neon Auth, install additional skills such as `neon-auth` with `npx skills add neondatabase/agent-skills -s neon-auth`. Then restart and ask your AI assistant **"Get started with Neon"**.
 
 <Admonition type="note">
 Each run of `npx neonctl@latest init` creates a new Neon API key. If you run it multiple times, review your [API keys](https://console.neon.tech/app/settings/api-keys) and revoke any you no longer need.

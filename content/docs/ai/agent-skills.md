@@ -2,7 +2,7 @@
 title: Agent Skills
 subtitle: Teach your AI coding assistant how to work with Neon
 enableTableOfContents: true
-updatedOn: '2026-04-16T20:40:00.000Z'
+updatedOn: "2026-04-16T20:40:00.000Z"
 redirectFrom:
   - /docs/ai/ai-rules
   - /docs/ai/ai-rules-neon-toolkit
@@ -30,7 +30,7 @@ For any AI tool that supports the [Agent Skills](https://agentskills.io) format,
 npx skills add neondatabase/agent-skills -s neon-postgres
 ```
 
-This works with Cursor, Claude Code, and other compatible tools. The `-s` flag selects a specific skill from the repository. Available skills include `neon-postgres` (the main Neon development skill) and `claimable-postgres` (for [disposable databases](/docs/reference/claimable-postgres)).
+This works with Cursor, Claude Code, and other compatible tools. The `-s` flag selects a specific skill from the repository. Available skills include `neon-postgres` (the main Neon development skill), `neon-auth` (for Neon Auth provisioning and configuration), and `claimable-postgres` (for [disposable databases](/docs/reference/claimable-postgres)).
 
 Useful flags:
 
@@ -93,7 +93,7 @@ The Neon skill provides guidance across the full development workflow:
 
 - **Getting started** with Neon, including project setup and key features (branching, autoscaling, scale-to-zero, instant restore, read replicas)
 - **Connections**, including the serverless driver, connection pooling, and connection strings
-- **Authentication** with Neon Auth
+- **Authentication** with Neon Auth (for dedicated Neon Auth workflows, install the `neon-auth` skill with `npx skills add neondatabase/agent-skills -s neon-auth`)
 - **Data API** via `@neondatabase/neon-js`
 - **Platform APIs and SDKs**, including the REST API, TypeScript SDK, and Python SDK
 - **Developer tools**, including the CLI, VS Code extension, and MCP server

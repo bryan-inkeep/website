@@ -1,5 +1,5 @@
 ---
-title: 'Neon CLI command: init'
+title: "Neon CLI command: init"
 subtitle: Initialize an app project with Neon, including auth, MCP server, extensions,
   and agent skills
 summary: >-
@@ -7,7 +7,7 @@ summary: >-
   including authentication, configuring the Neon MCP Server, and installing
   necessary extensions and agent skills for supported editors.
 enableTableOfContents: true
-updatedOn: '2026-03-20T18:23:32.457Z'
+updatedOn: "2026-03-20T18:23:32.457Z"
 ---
 
 ## The `init` command
@@ -65,7 +65,7 @@ neon init
 
 After running the command, restart your editor and ask your AI assistant to "Get started with Neon" to launch an interactive onboarding guide. The command installs [Neon agent skills](https://github.com/neondatabase/agent-skills) to help you get started with Neon, including helping you configure a database connection. For Cursor and VS Code users, the Neon Local Connect extension also provides database schema browsing, SQL editing, and table data management directly in your IDE.
 
-Under the hood, `init` runs `npx skills add neondatabase/agent-skills --skill neon-postgres --agent <name>` for each selected editor. You can also run this command directly to install skills without the rest of the init flow, or use `npx skills add ... -g` to install globally. See [neon-postgres on skills.sh](https://skills.sh/neondatabase/agent-skills/neon-postgres) for more about the skill.
+Under the hood, `init` runs `npx skills add neondatabase/agent-skills --skill neon-postgres --agent <name>` for each selected editor. You can also run this command directly to install skills without the rest of the init flow, or use `npx skills add ... -g` to install globally. See [neon-postgres on skills.sh](https://skills.sh/neondatabase/agent-skills/neon-postgres) for more about the skill. To add specialized skills (such as the [neon-auth skill](/docs/ai/agent-skills) for Neon Auth workflows), run `npx skills add neondatabase/agent-skills -s neon-auth`.
 
 <Admonition type="warning">
 Skills are installed at the project level in the current working directory. Run `init` from your project root, otherwise skills will end up in the wrong location. You may want to commit project-level files so teammates get the same skills, or add them to `.gitignore` for per-developer setup.
