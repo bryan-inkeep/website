@@ -7,7 +7,7 @@ summary: >-
   Server, enabling users to execute commands and make schema changes through
   natural language without coding.
 enableTableOfContents: true
-updatedOn: '2026-04-24T10:03:58.000Z'
+updatedOn: "2026-04-24T10:03:58.000Z"
 ---
 
 The **Neon MCP Server** is an open-source tool that lets you interact with your Neon Postgres databases in **natural language**:
@@ -15,6 +15,7 @@ The **Neon MCP Server** is an open-source tool that lets you interact with your 
 - Manage projects, branches, and databases with conversational commands
 - Run SQL queries and make schema changes without writing code
 - Use branch-based migrations for safer schema modifications
+- Provision and configure Neon Auth for application authentication (for AI-assisted Neon Auth setup, see the [neon-auth skill](/docs/ai/agent-skills))
 
 ## Quick setup
 
