@@ -259,6 +259,8 @@
           slug: connect/connect-from-any-app
         - title: Neon serverless driver
           slug: serverless/serverless-driver
+        - title: Connection pooling FAQ
+          slug: connect/serverless-driver-pooling-faq
         - title: Neon SQL Editor
           slug: get-started/query-with-neon-sql-editor
         - title: Passwordless auth
